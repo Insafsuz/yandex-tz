@@ -1,0 +1,63 @@
+//МИКСИНЫ
+@import '_mixins';
+//МИКСИНЫ
+
+//ШРИФТЫ
+
+// Подключение шрифтов
+@import '_fonts';
+// Подключение шрифтов
+
+// // Иконочный шрифт
+// @import 'icons';
+// // Иконочный шрифт
+
+//ШРИФТЫ
+
+// ПЕРЕМЕННЫЕ
+@import '_vars';
+// ПЕРЕМЕННЫЕ
+
+// ОБНУЛЕНИЕ
+@import '_reset';
+body {
+  color: $mainColor;
+  font-family: $fontFamily;
+  font-size: calc(24px / 16px) + rem;
+  &.lock {
+    overflow: hidden;
+  }
+}
+// ОБНУЛЕНИЕ
+
+// ОБОЛОЧКА
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+// ОБОЛОЧКА
+
+// КОНТЕЙНЕР
+.container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  padding: 0px 32px;
+}
+// КОНТЕЙНЕР
+
+// Подключение файлов
+@import '_bem';
+// Подключение файлов
+
+// Подключени файлов стилей и страниц
+@import '_home';
+// Подключени файлов стилей и страниц
+
+// Основной блок
+.page {
+  flex: 1 1 auto;
+}
+// Основной блок
