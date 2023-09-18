@@ -33,16 +33,3 @@ mobileSlider()
 window.addEventListener('resize', () => {
   mobileSlider()
 })
-
-let sliderReview = new Swiper('.slider-review', {
-  autoplay: true,
-  loop: true,
-  observer: true,
-  observeParents: true,
-  slidesPerView: 1,
-  speed: 400,
-  pagination: {
-    el: '.slider-review__dots',
-    clickable: true,
-  },
-})
